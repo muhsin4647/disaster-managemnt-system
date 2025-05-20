@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_0978beb5e9d7d95277060656a13af842 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+        <div style="position: fixed; 
+                    top: 10px; 
+                    left: 50px; 
+                    z-index:9999; 
+                    font-size:14px;">
+        <select id="location-select" onchange="window.location.href=this.value">
+        <option value="https://www.google.com/maps/@?api=1&map_action=map&center=9.9312,76.2673&zoom=12&basemap=satellite">Kochi</option><option value="https://www.google.com/maps/@?api=1&map_action=map&center=8.5241,76.9366&zoom=12&basemap=satellite">Trivandrum</option><option value="https://www.google.com/maps/@?api=1&map_action=map&center=13.0827,80.2707&zoom=12&basemap=satellite">Chennai</option><option value="https://www.google.com/maps/@?api=1&map_action=map&center=19.076,72.8777&zoom=12&basemap=satellite">Mumbai</option><option value="https://www.google.com/maps/@?api=1&map_action=map&center=12.9716,77.5946&zoom=12&basemap=satellite">Bengaluru</option>
+                </div>
+                
+    
+            <div class="folium-map" id="map_0978beb5e9d7d95277060656a13af842" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_0978beb5e9d7d95277060656a13af842 = L.map(
+                "map_0978beb5e9d7d95277060656a13af842",
+                {
+                    center: [8.5241, 76.9366],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 12,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_87002297b0b0c1bd5b2e70696111133b = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_87002297b0b0c1bd5b2e70696111133b.addTo(map_0978beb5e9d7d95277060656a13af842);
+        
+    
+            var marker_4eb1634ae1c136609ddcdbe00e4eaeda = L.marker(
+                [9.9312, 76.2673],
+                {
+}
+            ).addTo(map_0978beb5e9d7d95277060656a13af842);
+        
+    
+        var popup_25a13d7d225f04eaf27f92d80fa17079 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_93fb9309f2afa6336ea7d867f005ba57 = $(`<div id="html_93fb9309f2afa6336ea7d867f005ba57" style="width: 100.0%; height: 100.0%;">Kochi</div>`)[0];
+                popup_25a13d7d225f04eaf27f92d80fa17079.setContent(html_93fb9309f2afa6336ea7d867f005ba57);
+            
+        
+
+        marker_4eb1634ae1c136609ddcdbe00e4eaeda.bindPopup(popup_25a13d7d225f04eaf27f92d80fa17079)
+        ;
+
+        
+    
+    
+            var marker_3262f0f7caf879ab3e7eab57811c9042 = L.marker(
+                [8.5241, 76.9366],
+                {
+}
+            ).addTo(map_0978beb5e9d7d95277060656a13af842);
+        
+    
+        var popup_e6d67ee24c2b61ce4c758e48e39b06d5 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_39602a6861beb00a18be99d25ffa897c = $(`<div id="html_39602a6861beb00a18be99d25ffa897c" style="width: 100.0%; height: 100.0%;">Trivandrum</div>`)[0];
+                popup_e6d67ee24c2b61ce4c758e48e39b06d5.setContent(html_39602a6861beb00a18be99d25ffa897c);
+            
+        
+
+        marker_3262f0f7caf879ab3e7eab57811c9042.bindPopup(popup_e6d67ee24c2b61ce4c758e48e39b06d5)
+        ;
+
+        
+    
+    
+            var marker_872aa9a73500857d172d3a79eef590fe = L.marker(
+                [13.0827, 80.2707],
+                {
+}
+            ).addTo(map_0978beb5e9d7d95277060656a13af842);
+        
+    
+        var popup_c4cbd2a5d6b6120ef506f31e2a6fd796 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_aa9db83313c2f6528389b7718bc74488 = $(`<div id="html_aa9db83313c2f6528389b7718bc74488" style="width: 100.0%; height: 100.0%;">Chennai</div>`)[0];
+                popup_c4cbd2a5d6b6120ef506f31e2a6fd796.setContent(html_aa9db83313c2f6528389b7718bc74488);
+            
+        
+
+        marker_872aa9a73500857d172d3a79eef590fe.bindPopup(popup_c4cbd2a5d6b6120ef506f31e2a6fd796)
+        ;
+
+        
+    
+    
+            var marker_1e13340b93c8dfbbbe721c39dcb9e60c = L.marker(
+                [19.076, 72.8777],
+                {
+}
+            ).addTo(map_0978beb5e9d7d95277060656a13af842);
+        
+    
+        var popup_e2d635d5d4bfdae2d170f1562c4ec89b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_56cffd9bcb536b9db2a82bf4eae015fd = $(`<div id="html_56cffd9bcb536b9db2a82bf4eae015fd" style="width: 100.0%; height: 100.0%;">Mumbai</div>`)[0];
+                popup_e2d635d5d4bfdae2d170f1562c4ec89b.setContent(html_56cffd9bcb536b9db2a82bf4eae015fd);
+            
+        
+
+        marker_1e13340b93c8dfbbbe721c39dcb9e60c.bindPopup(popup_e2d635d5d4bfdae2d170f1562c4ec89b)
+        ;
+
+        
+    
+    
+            var marker_8cf5e8c4a89ac8f09a4caafa83586167 = L.marker(
+                [12.9716, 77.5946],
+                {
+}
+            ).addTo(map_0978beb5e9d7d95277060656a13af842);
+        
+    
+        var popup_1035504d6205592c983c48ece4f92b92 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_8c9c2d018961b92fa126c66f58517c16 = $(`<div id="html_8c9c2d018961b92fa126c66f58517c16" style="width: 100.0%; height: 100.0%;">Bengaluru</div>`)[0];
+                popup_1035504d6205592c983c48ece4f92b92.setContent(html_8c9c2d018961b92fa126c66f58517c16);
+            
+        
+
+        marker_8cf5e8c4a89ac8f09a4caafa83586167.bindPopup(popup_1035504d6205592c983c48ece4f92b92)
+        ;
+
+        
+    
+    
+            var marker_070829fcecd4dabd9ca5128ef7725723 = L.marker(
+                [8.5241, 76.9366],
+                {
+}
+            ).addTo(map_0978beb5e9d7d95277060656a13af842);
+        
+    
+            var icon_8d0825567d01603d285b937a836213fa = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+                marker_070829fcecd4dabd9ca5128ef7725723.setIcon(icon_8d0825567d01603d285b937a836213fa);
+            
+</script>
+</html>
